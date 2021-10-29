@@ -9,6 +9,7 @@ const App = () => {
       <Header/>
       <div className="container-view">Some activities should be here</div>
       <div>testing changes</div>
+      <div>redeployed</div>
     </div>
   );
 };
