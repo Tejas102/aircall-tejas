@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link href="app.css" rel="stylesheet">
+    <link href="body.css" rel="stylesheet">
+    <link href="header.css" rel="stylesheet"> -->
+
+  <title>Aircall</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta property="description" name="description" content="">
+</head>
+<style>
+   body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font: inherit;
+        font-size: 100%;
+
+        background: #233142;
+        font-family: helvetica, arial, sans-serif;
+        font-size: 13px;
+        color: #333333;
+        line-height: 1;
+
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        }
+    div.view {
+        
+
+        width: 376px;
+        height: 666px;
+        z-index: 100;
+
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+        }
+    div.view-content {
+        padding: 20px;
+    }
+
+</style>
+
+<body>
+    <div class='view'>
+
+              <a class="btn" href="/" id="">Back</a>
+
+              <script type="text/javascript">
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.id);
+                document.getElementById('caller1div').innerHTML=caller1data.id;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.created_at);
+                document.getElementById('caller1createdat').innerHTML=caller1data.created_at;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.direction);
+                document.getElementById('direction').innerHTML=caller1data.direction;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.from);
+                document.getElementById('from').innerHTML=caller1data.from;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.to);
+                document.getElementById('to').innerHTML=caller1data.to;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.via);
+                document.getElementById('via').innerHTML=caller1data.via;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.duration);
+                document.getElementById('callduration').innerHTML=caller1data.duration;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+                fetch('https://aircall-job.herokuapp.com/activities/7833').then((caller1)=>{
+                // console.log(data);
+                return caller1.json();
+                }).then((caller1data)=>{
+                console.log(caller1data.call_type);
+                document.getElementById('calltype').innerHTML=caller1data.call_type;
+                }).catch((err)=>{
+                console.log(err);
+                })
+
+              </script><br>
+              <a class="btn" href="" id="">Caller ID:</a>
+              <a class="btn" href="" id="caller1div"></a>
+              <br>
+              <a class="btn" href="" id="">Called at:</a>
+              <a class="btn" href="" id="caller1createdat"></a>
+              <br>
+              <a class="btn" href="" id="">Direction:</a>
+              <a class="btn" href="" id="direction"></a>
+              <br>
+              <a class="btn" href="" id="">From:</a>
+              <a class="btn" href="" id="from"></a>
+              <br>
+              <a class="btn" href="" id="">Called to:</a>
+              <a class="btn" href="" id="to"></a>
+              <br>
+              <a class="btn" href="" id="">Called via:</a>
+              <a class="btn" href="" id="via"></a>
+              <br>
+              <a class="btn" href="" id="">Call duration:</a>
+              <a class="btn" href="" id="callduration"></a>
+              <br>
+              <a class="btn" href="" id="">Call type:</a>
+              <a class="btn" href="" id="calltype"></a>
+
+
+
+                
+
+
+            </div>
+</body>
+
+</html>
